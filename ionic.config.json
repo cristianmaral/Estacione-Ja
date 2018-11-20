@@ -1,0 +1,7 @@
+{
+  "name": "Estacione",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

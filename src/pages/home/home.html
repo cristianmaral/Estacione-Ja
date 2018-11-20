@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Estatísticas</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+  <div class="logo">Estacione Já</div>
+  <div padding>
+    <ion-segment [(ngModel)]="segment" (ionChange)="calc(segment)">
+      <ion-segment-button  value="barraGeral">
+        Geral
+      </ion-segment-button>
+      <ion-segment-button value="barra1">
+        Andar 1
+      </ion-segment-button>
+	  <ion-segment-button value="barra2">
+        Andar 2
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div align='center'>
+    <ion-icon id="teste" name='car' class="icone"></ion-icon>
+  </div>
+  <canvas id="graficoBarraCanvas" width="260" height="300"></canvas>
+</ion-content>
+
+<ion-footer>
+  <div padding class="foottitle"> Vers&atilde;o 1.0.2</div>
+</ion-footer>
